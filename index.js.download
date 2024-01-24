@@ -1,0 +1,20 @@
+const header = document.querySelector("header");
+window.addEventListener("scroll",function(){
+    headeer.classlist.toggle("sticky",window.scrollY > 120);
+});
+
+
+const aboutSection = document.getElementById("about");
+const aboutY = aboutSection.getBoundingClientRect().top
+
+function handleAbout() {
+    window.scrollTo(0, aboutY )
+}
+
+function handleServices() {
+    window.scrollTo(0, 2 * window.innerHeight - 100)
+}
+
+function handleContact() {
+    window.scrollTo(0, 3 * window.innerHeight + 300);
+}
